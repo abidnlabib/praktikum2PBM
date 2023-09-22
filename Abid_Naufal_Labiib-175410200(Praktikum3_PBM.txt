@@ -1,0 +1,99 @@
+/***
+
+codelab 1
+
+//menampilkan kata Hello, world!
+fun main() {
+    println("Hello, world!")
+}
+
+//menampilkan dua kolom kata Hello, Android
+fun main() {
+    println("Hello, Android")
+    println("Hello, Android")
+}
+
+menampilkan kata Hello, Your_Name
+fun main() {
+    println("Hello, Your_Name")
+}
+
+//program dibawah error karena pada baris println hanya menggunakan satu tanda (") 
+fun main() {
+    println("Today is sunny)
+}
+//yang benar 
+fun main() {
+    println("Today is sunny!")
+}
+
+//menampilkan kolom 1,2,3 secara berurutan
+fun main() {
+    println("1")
+    println("2")
+    println("3")
+}
+
+fun main() {
+    println("i'm")
+    println("learning")
+    println("kotlin!")
+}
+//program error karena kotlin hanya mengharapkan satu pernyataan di setiap baris, sedangkan println kedua dan ketiga diletakkan sejajar dengan printlnpertama sehingga terdeteksi sebagai (
+Unresolved reference: println)
+fun main() {
+    println("Cloudy") println("Partly Cloudy") println("Windy")
+}
+//yang benar
+fun main() {
+    println("Cloudy") 
+    println("Partly Cloudy") 
+    println("Windy")
+}
+//program error karena tidak menggunakan tanda {}
+fun main() (
+    println("How's the weather today?")
+)
+//yang benar
+fun main() {
+    println("How's the weather today?")
+}
+
+/***
+
+codelab 2
+
+//menampilkan angka 2 dengan deklarasi variabel count dengan tipe data int
+fun main() {
+    val count: Int = 2
+    println(count)
+}
+//output tidak menampilkan angka 2 karena variabel count tidak di deklarasikan pada println
+fun main() {
+    val count: Int = 2
+    println("You have count unread messages.")
+}
+//yang benar
+fun main() {
+    val count: Int = 2
+    println("You have $count unread messages.")
+}
+//tipe data tidak perlu diberikan karena nilainya sudah ditetapkan
+fun main() {
+    val unreadCount = 5
+    val readCount = 100
+    println("You have ${unreadCount + readCount} total messages in your inbox.")
+}
+//kata kunci val digunakan jika tidak ingin nilai variabel dapat dirubah.kata kunsi var jika ingin nilai variabel dapat dirubah
+fun main() {
+    var cartTotal = 0
+    cartTotal = 20
+    println("Total: $cartTotal")
+}
+//
+fun main() {
+    var count: Int = 10
+    println("You have $count unread messages.")
+    count = count + 1
+}
+/***
